@@ -508,4 +508,9 @@ main section.contact.container-bottom .flex .left p {
     .container-bottom {
         padding-bottom: 11px;
     }
+
+.container {
+    margin: 0 0%;
+    padding: 0 7%;
+}
 }
