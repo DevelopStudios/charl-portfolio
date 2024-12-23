@@ -496,5 +496,8 @@ main section.contact.container-bottom .flex .left p {
     input, textarea {
         width:80%;
     }
-
+    section.contact.container-bottom .right p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
