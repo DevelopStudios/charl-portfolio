@@ -92,7 +92,7 @@ main section.hero h2{
     font-size: 88px;
     letter-spacing: -2.5px;
     margin: 0;
-    line-height: 0.8;
+    line-height: 0.95;
 }
 
 main section.hero p{
@@ -481,7 +481,7 @@ main section.contact.container-bottom .flex .left p {
         width: 85%;
     }
     main section.hero .left {
-        margin-top: 78vw;
+        margin-top: 93vw;
     }
     main section.hero .right .spacer {
         display: none;
