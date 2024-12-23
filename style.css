@@ -500,4 +500,9 @@ main section.contact.container-bottom .flex .left p {
         width: 100%;
         margin-bottom: 20px;
     }
+    main section.contact img.artifact {
+        position: absolute;
+        left: -25px;
+        margin-top: 57px;
+    }
 }
