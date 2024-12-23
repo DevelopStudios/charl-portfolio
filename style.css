@@ -1,0 +1,346 @@
+/* Global Styles */
+body {
+    background: #000;
+    color: #fff;
+}
+button:hover {
+    cursor: pointer;
+    color: #4EE1A0 !important;
+}
+.container {
+    margin: 0 7%;
+}
+.container-bottom {
+    padding: 0 7%;
+}
+hr.global-hr {
+    margin-top: 231px;
+    width: 85%;
+}
+span.underline {
+    border-bottom: 4px solid #4EE1A0;
+}
+/*   */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 23px;
+}
+
+nav .title {
+    font-family: Space Grotesk;
+    font-weight: bold;
+    font-size:32px;
+    letter-spacing: -0.44px;
+}
+
+nav .icons {
+    display: flex;
+    position: relative;
+    z-index: 999;
+    margin-right: 110px;
+}
+
+nav .icons .icon {
+    width: 24px;
+    padding-left: 30px;
+}
+
+nav .icons .icon img {
+    width: 100%;
+}
+main section.hero img.artifact {
+    position: absolute;
+    width: 530px;
+    height: auto;
+    left: -141px;
+    top: 99px;
+}
+main section.hero {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+main section.hero .left {
+    position: relative;
+    z-index: 9999;
+}
+main section.hero .right .spacer {
+    background: #252525;
+    height: 81px;
+}
+main section.hero .right img.oval {
+    position: absolute;
+    width: 129px !important;
+    bottom: 154px;
+    left: -67px;
+}
+main section.hero .right {
+    position: absolute;
+    right: 212px;
+    top: -71px;
+    width: 25vw;
+}
+main section.hero .right img {
+    width:100%;
+}
+main section.hero h2{
+    font-family: Space Grotesk;
+    font-weight: bold;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    margin: 0;
+    line-height: 0.8;
+}
+
+main section.hero p{
+    font-family: Space Grotesk;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin: 0;
+    color: #D9D9D9;
+    margin-top: 3.6rem;
+    max-width: 27rem;
+    line-height: 1.5;
+    margin-bottom: 4.3rem;
+}
+main section.hero button.hero {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 12px;
+}
+main section.experience {
+    margin-top: 37px;
+    
+}
+main section.experience .entries {
+    display: flex;
+    flex-flow: wrap;
+}
+main section.experience.container .entries .entry {
+    width: 260px;
+    padding: 34px 4rem;
+}
+main section.experience.container .entries .entry h3 {
+    font-family: 'Space Grotesk';
+    font-size: 48px;
+    letter-spacing: -1.5px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+main section.experience.container .entries .entry p {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    color: #D9D9D9;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+main section.projects.container h2 {
+    font-family: Space Grotesk;
+    font-weight: bold;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    margin: 0;
+    line-height: 0.8;
+    margin-bottom: 88px;
+}
+
+main section.projects.container {
+    margin-top: 116px;
+}
+
+main section.projects .portfolio-entries .entry h5 {
+    font-family: 'Space Grotesk';
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 17px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+main section.projects .portfolio-entries .entry p {
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    color: #D9D9D9;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+main section.projects .portfolio-entries .entry img {
+    max-width: 27vw;
+}
+
+main section.projects .portfolio-entries {
+    display: flex;
+    align-items: center;
+}
+
+main section.projects .portfolio-entries .entry {
+    margin: 1vw;
+}
+
+main section.projects .actions {
+    margin-top:15px
+}
+
+main section.projects .actions button {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 12px;
+    margin-right: 15px
+}
+
+main section.contact {
+    background:#242424;
+    margin-top: 119px;
+}
+
+main section.contact.container-bottom .flex .left h2 {
+    font-family: Space Grotesk;
+    font-weight: bold;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    margin: 0;
+    line-height: 0.8;
+    margin-top: 91px;
+    position: relative;
+    z-index: 9999;
+}
+
+main section.contact.container-bottom .flex .left p {
+    font-family: Space Grotesk;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin: 0;
+    color: #D9D9D9;
+    max-width: 27rem;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 9999;
+}
+
+main section.contact.container-bottom .flex {
+    display: flex;
+    justify-content: space-between;
+}
+main section.contact img.artifact {
+    position: absolute;
+    left: -25px;
+    margin-top: 311px;
+}
+section.contact.container-bottom .right p {
+    width: 447px;
+    margin-bottom: 20px;
+}
+.right {
+    margin-top: 54px;
+}
+footer {
+    background:#242424;
+}
+footer .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+}
+
+footer .title {
+    font-family: Space Grotesk;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: -0.44px;
+}
+
+footer .icons {
+    display: flex;
+    position: relative;
+    z-index: 999;
+    margin-right: 110px;
+}
+footer .icons .icon {
+    width: 24px;
+    padding-left: 30px;
+}
+footer .left,footer .social {
+    margin-top: 42px;
+    margin-bottom: 100px;
+}
+
+/* Form Stykling */
+input::placeholder {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 300;
+}
+textarea::placeholder {
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 20px 0;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    
+}
+textarea {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width:100%;
+    padding: 20px 0;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid #4EE1A0;
+}
+textarea:focus {
+    outline: 0;
+    border-bottom: 1px solid #4EE1A0;
+} 
+
+p.button button {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    border-bottom: 2px solid #4EE1A0;
+    padding-bottom: 12px;
+    margin-top: 10px;
+}
+/*  */
