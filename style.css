@@ -429,7 +429,7 @@ main section.contact.container-bottom .flex .left p {
     z-index: 9999;
 }
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 500px) {
     main section.hero .left {
         position: relative;
         z-index: 9999;
