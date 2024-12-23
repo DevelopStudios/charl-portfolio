@@ -494,7 +494,7 @@ main section.contact.container-bottom .flex .left p {
         max-width: 100%;
     }
     input, textarea {
-        width:80%;
+        width:95%;
     }
     section.contact.container-bottom .right p {
         width: 100%;
@@ -504,5 +504,8 @@ main section.contact.container-bottom .flex .left p {
         position: absolute;
         left: -25px;
         margin-top: 57px;
+    }
+    .container-bottom {
+        padding-bottom: 11px;
     }
 }
