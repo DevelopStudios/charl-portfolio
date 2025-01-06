@@ -178,16 +178,15 @@ main section.projects .portfolio-entries .entry p {
 }
 
 main section.projects .portfolio-entries .entry img {
-    max-width: 27vw;
+    max-width: 25vw;
 }
 
 main section.projects .portfolio-entries {
     display: flex;
-    align-items: center;
-}
-
-main section.projects .portfolio-entries .entry {
-    margin: 1vw;
+    gap: 10px 20px;
+    row-gap: 40px;
+    column-gap: 20px;
+    flex-flow: wrap;
 }
 
 main section.projects .actions {
