@@ -74,6 +74,7 @@ main section.hero .right .spacer {
 main section.hero .right img.oval {
     position: absolute;
     width: 129px !important;
+    z-index: 2;
     bottom: 154px;
     left: -67px;
 }
@@ -512,4 +513,8 @@ main section.contact.container-bottom .flex .left p {
     margin: 0 0%;
     padding: 0 7%;
 }
+}
+.self {
+    filter: grayscale(100%);
+    z-index: 1;
 }
