@@ -518,3 +518,9 @@ main section.contact.container-bottom .flex .left p {
     filter: grayscale(100%);
     z-index: 1;
 }
+
+@media screen and (min-width: 2079px) {
+    main section.hero {
+    margin-bottom: 27rem !important;
+    }
+}
