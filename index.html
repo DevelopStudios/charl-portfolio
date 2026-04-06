@@ -55,7 +55,7 @@
          
         </section>
         <hr class="global-hr">
-        <section class="experience container">
+        <section class="experience container reveal">
             <div class="entries">
                 <div class="entry">
                     <h3>HTML</h3>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects container">
+        <section class="projects container reveal">
             <h2>Projects</h2>
             <div class="portfolio-entries">
                 <div class="entry">
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact container-bottom" id="contact">
+        <section class="contact container-bottom reveal" id="contact">
             <div class="flex">
                 <div class="left">
                     <img class="artifact" src="./assets/artifact.png" alt="artifact">
@@ -220,5 +220,20 @@
         </div>
     </footer>
 
+    <script>
+        const observerOptions = {
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

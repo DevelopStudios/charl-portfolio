@@ -357,6 +357,17 @@ textarea {
     resize: none;
 }
 
+/* Scroll Reveal Styles */
+.reveal {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.reveal.active {
+    animation: fadeInUp 1s ease-out forwards;
+    pointer-events: auto;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
