@@ -8,6 +8,12 @@
     --color-green: #4ee1a0;
     --font-main: 'Space Grotesk', sans-serif;
     --transition: all 0.3s ease-in-out;
+
+    /* Fluid Typography Scale */
+    --fs-h1: clamp(50px, 7vw, 88px);
+    --fs-h2: clamp(32px, 5vw, 48px);
+    --fs-h3: clamp(28px, 1.8vw, 34px);
+    --fs-body: clamp(16px, 1.1vw, 18px);
 }
 
 body {
@@ -40,7 +46,7 @@ a:hover {
     margin: 0 7%;
 }
 .container-bottom {
-    padding: 0 7%;
+    padding: 1px 7%;
 }
 hr.global-hr {
     margin-top: 100px;
@@ -105,6 +111,7 @@ main section.hero .left {
     z-index: 2;
     animation: fadeInUp 0.8s ease-out forwards;
 }
+
 main section.hero .right .spacer {
     background: var(--color-dark-alt);
     height: 81px;
@@ -132,14 +139,17 @@ main section.hero .right img {
 main section.hero h2{
     font-weight: bold;
     font-size: 88px;
+    font-size: var(--fs-h1);
     letter-spacing: -2.5px;
     margin: 0;
     line-height: 0.95;
+    line-height: 1.1;
 }
 
 main section.hero p{
     font-weight: 300;
     font-size: 18px;
+    font-size: var(--fs-body);
     letter-spacing: 0;
     margin: 0;
     color: var(--color-grey);
@@ -189,6 +199,7 @@ main section.experience.container .entries .entry h3 {
 }
 main section.experience.container .entries .entry p {
     font-size: 18px;
+    font-size: var(--fs-body);
     color: var(--color-grey);
     letter-spacing: 0;
     margin: 0;
@@ -197,6 +208,7 @@ main section.experience.container .entries .entry p {
 main section.projects.container h2 {
     font-weight: bold;
     font-size: 88px;
+    font-size: var(--fs-h1);
     letter-spacing: -2.5px;
     margin: 0;
     line-height: 0.8;
@@ -207,10 +219,10 @@ main section.projects.container {
     margin-top: 116px;
 }
 
-main section.projects .portfolio-entries .entry h5 {
-    font-size: 24px;
+main section.projects .portfolio-entries .entry h3 {
+    font-size: var(--fs-h3);
     letter-spacing: 0;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
     margin-top: 17px;
     text-transform: uppercase;
@@ -219,13 +231,15 @@ main section.projects .portfolio-entries .entry h5 {
 
 main section.projects .portfolio-entries .entry p {
     font-size: 18px;
+    font-size: var(--fs-body);
     color: var(--color-grey);
     letter-spacing: 0;
     margin: 0;
 }
 
 main section.projects .portfolio-entries .entry img {
-    max-width: 25vw;
+    width: 100%;
+    display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
     border-radius: 8px;
 }
@@ -236,11 +250,9 @@ main section.projects .portfolio-entries .entry:hover img {
 }
 
 main section.projects .portfolio-entries {
-    display: flex;
-    gap: 10px 20px;
-    row-gap: 40px;
-    column-gap: 20px;
-    flex-flow: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
 }
 
 main section.projects .actions {
@@ -259,6 +271,7 @@ main section.contact {
 main section.contact.container-bottom .flex .left h2 {
     font-weight: bold;
     font-size: 88px;
+    font-size: var(--fs-h1);
     letter-spacing: -2.5px;
     margin: 0;
     line-height: 0.8;
@@ -270,6 +283,7 @@ main section.contact.container-bottom .flex .left h2 {
 main section.contact.container-bottom .flex .left p {
     font-weight: 300;
     font-size: 18px;
+    font-size: var(--fs-body);
     letter-spacing: 0;
     margin: 0;
     color: var(--color-grey);
@@ -425,22 +439,13 @@ textarea:focus {
         left: 12%;
         bottom: 10%;
     }
+    main section.projects .portfolio-entries {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 853px) {
-    main section.projects .portfolio-entries .entry img {
-        max-width: 39vw;
-    }
-    main section.projects .portfolio-entries {
-        display: flex;
-        align-items: center;
-        flex-flow: wrap;
-    }
-    main section.projects .portfolio-entries .entry {
-        margin: 1vw;
-        margin-bottom: 6vw;
-    }
     main section.contact.container-bottom .flex {
         display: block;
     }
@@ -477,6 +482,13 @@ main section.contact.container-bottom .flex .left p {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 650px) {
+    main section.projects .portfolio-entries {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 500px) {
     hr.global-hr {
         margin-top: 74px;
@@ -484,9 +496,6 @@ main section.contact.container-bottom .flex .left p {
     }
     main section.hero .right .spacer {
         display: none;
-    }
-    main section.projects .portfolio-entries .entry img {
-        max-width: 100%;
     }
     input, textarea {
         width:95%;
@@ -526,10 +535,15 @@ a {
 }
 
 @media screen and (min-width: 2153px) {
+    :root {
+        --fs-h1: 100px;
+        --fs-body: 22px;
+    }
     main section.hero .left {
         flex: 3;
     }
     main section.hero p {
         max-width: 84rem;
+        max-width: 100rem;
     }
 }
