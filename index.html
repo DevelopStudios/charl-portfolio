@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Charl Roux</title>
-    <meta name="description" content="Charl Roux - Software Engineer specializing in scaling enterprise-grade applications and high-performing engineering teams.">
+    <meta name="description" content="Charl Roux - Senior Angular Engineer specializing in scalable front-end architecture, Angular migrations, and high-performing engineering teams.">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Portfolio | Charl Roux">
-    <meta property="og:description" content="Based in Michigan, specializing in Angular migrations and resilient web applications.">
+    <meta property="og:description" content="Senior Angular Engineer based in Michigan. Angular architecture, RxJS, TypeScript, and enterprise-scale front-end systems.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css"></head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
         <nav class="container">
@@ -40,9 +41,9 @@
                 <img class="artifact" src="./assets/artifact.png" alt="artifact">
                 
                 <div class="left">
-                    <h2>Nice to meet you!</h2><br>
+                    <h2>Senior Angular Engineer</h2><br>
                     <h2>I'm <span class="underline">Charl Roux</span></h2>
-                    <p>Based in Michigan, I specialize in scaling enterprise-grade applications and high-performing engineering teams. From Angular 19 migrations to real-time AI integrations, I build resilient, accessible web apps that balance technical excellence with business impact.</p>
+                    <p>7 years architecting scalable Angular applications from the ground up. I lead complex migrations, design reactive state patterns with RxJS, and build accessible, production-grade UIs that hold up at enterprise scale — based in Michigan, open to remote.</p>
                     <button class="hero" onClick="document.getElementById('contact').scrollIntoView()">
                         CONTACT ME
                     </button>
@@ -59,27 +60,33 @@
             <div class="entries">
                 <div class="entry">
                     <h3>HTML</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">Semantic markup, accessibility (WCAG 2.1), SEO best practices</span>
                 </div>
                 <div class="entry">
                     <h3>CSS</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">CSS architecture, animations, responsive design systems</span>
                 </div>
                 <div class="entry">
                     <h3>Javascript</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">ES2022+, async patterns, performance optimisation</span>
                 </div>
                 <div class="entry">
                     <h3>Typescript</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">Strict typing, generics, advanced type utilities</span>
                 </div>
                 <div class="entry">
                     <h3>RxJs</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">Complex stream composition, custom operators, memory leak prevention</span>
                 </div>
                 <div class="entry">
                     <h3>Angular</h3>
-                    <p>7 Years Experience</p>
+                    <p>7 Years</p>
+                    <span class="skill-detail">v12→v19 migrations, OnPush strategy, standalone components, Signals</span>
                 </div>
             </div>
         </section>
@@ -87,9 +94,10 @@
             <h2>Projects</h2>
             <div class="portfolio-entries">
                 <div class="entry">
-                    <img src="./assets/ledger.png" alt="Screenshot of Precision Ledger project" loading="lazy">
-                    <h3>Precision Ledger</h3>
-                    <p>TYPESCRIPT ANGULAR WEBSCOCKETS</p>
+                    <img src="./assets/ledger.png" alt="Screenshot of Ledger Stream project" loading="lazy">
+                    <h3>Ledger Stream</h3>
+                    <p>TYPESCRIPT ANGULAR WEBSOCKETS</p>
+                    <p class="project-desc">Real-time financial ledger powered by a custom Angular WebSocket service. Implements OnPush change detection to handle high-frequency data streams without UI jank.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank">
                             <button>Github</button> 
@@ -100,9 +108,10 @@
                     </div>
                 </div>
                 <div class="entry">
-                    <img src="./assets/invoice.png" alt="Screenshot of Invoice App project" loading="lazy">
-                    <h3>Invoice App</h3>
+                    <img src="./assets/invoice.png" alt="Screenshot of InvoiceFlow project" loading="lazy">
+                    <h3>InvoiceFlow</h3>
                     <p>HTML CSS TYPESCRIPT ANGULAR</p>
+                    <p class="project-desc">End-to-end billing lifecycle manager with reactive forms, draft/pending/paid state machine, and a fully accessible UI built on Angular's CDK.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/invoice-app" target="_blank">
                             <button>Github</button> 
@@ -113,9 +122,10 @@
                     </div>
                 </div>
                 <div class="entry">
-                    <img src="./assets/password.png" alt="Screenshot of Password Generator App project" loading="lazy">
-                    <h3>Password Generator App</h3>
+                    <img src="./assets/password.png" alt="Screenshot of VaultKey project" loading="lazy">
+                    <h3>VaultKey</h3>
                     <p>HTML CSS TYPESCRIPT ANGULAR</p>
+                    <p class="project-desc">Entropy-based credential generator using the Web Crypto API. Configurable complexity rules with real-time strength scoring and zero external dependencies.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/password-generator" target="_blank">
                             <button>Github</button> 
@@ -126,9 +136,10 @@
                     </div>
                 </div>
                 <div class="entry">
-                    <img src="./assets/devjobs.jpg" alt="Screenshot of Dev Jobs board project" loading="lazy">
-                    <h3>Dev Jobs</h3>
+                    <img src="./assets/devjobs.jpg" alt="Screenshot of TalentBoard project" loading="lazy">
+                    <h3>TalentBoard</h3>
                     <p>HTML CSS JAVASCRIPT ANGULAR</p>
+                    <p class="project-desc">Filterable developer job board with dynamic search, contract/full-time toggles, and Angular routing. Optimised with trackBy and virtual scroll for large result sets.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/devjobs-FE.git" target="_blank">
                             <button>Github</button> 
@@ -139,9 +150,10 @@
                     </div>
                 </div>
                 <div class="entry">
-                    <img src="./assets/entertainment.png" alt="Screenshot of Entertainment App project" loading="lazy">
-                    <h3>Entertainment App</h3>
+                    <img src="./assets/entertainment.png" alt="Screenshot of Flickvault project" loading="lazy">
+                    <h3>Flickvault</h3>
                     <p>HTML CSS JAVASCRIPT ANGULAR</p>
+                    <p class="project-desc">Personal media discovery hub with bookmarking, category filtering, and seamless TV/movie toggling. Built with lazy-loaded feature modules and a clean signal-based store.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/entertainment" target="_blank">
                             <button>Github</button> 
@@ -152,9 +164,10 @@
                     </div>
                 </div>
                 <div class="entry">
-                    <img src="./assets/link.jpg" alt="Screenshot of Shortify project" loading="lazy">
-                    <h3>Shortify</h3>
+                    <img src="./assets/link.jpg" alt="Screenshot of LinkForge project" loading="lazy">
+                    <h3>LinkForge</h3>
                     <p>HTML CSS JAVASCRIPT REACT</p>
+                    <p class="project-desc">URL shortener with click analytics and copy-to-clipboard UX. Built in React to demonstrate cross-framework adaptability alongside a primary Angular stack.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/shortify-app" target="_blank">
                             <button>Github</button>
@@ -171,7 +184,7 @@
                 <div class="left">
                     <img class="artifact" src="./assets/artifact.png" alt="artifact">
                     <h2>Contact</h2><br>
-                    <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+                    <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
                 </div>
                 <div class="right">
                     <form action="https://formsubmit.co/charlroux641@gmail.com" method="POST">
