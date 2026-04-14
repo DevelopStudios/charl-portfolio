@@ -69,7 +69,7 @@
                     <span class="skill-detail">CSS architecture, animations, responsive design systems</span>
                 </div>
                 <div class="entry">
-                    <h3>Javascript</h3>
+                    <h3>JavaScript</h3>
                     <p>7 Years</p>
                     <span class="skill-detail">ES2022+, async patterns, performance optimisation</span>
                 </div>
@@ -88,6 +88,31 @@
                     <p>7 Years</p>
                     <span class="skill-detail">v12→v19 migrations, OnPush strategy, standalone components, Signals</span>
                 </div>
+                <div class="entry">
+                    <h3>NgRx</h3>
+                    <p>5 Years</p>
+                    <span class="skill-detail">Store, Effects, Selectors, Entity adapter, ComponentStore</span>
+                </div>
+                <div class="entry">
+                    <h3>Testing</h3>
+                    <p>5 Years</p>
+                    <span class="skill-detail">Cypress E2E, Jest unit tests, TestBed, 50% regression reduction</span>
+                </div>
+                <div class="entry">
+                    <h3>Node.js</h3>
+                    <p>4 Years</p>
+                    <span class="skill-detail">REST API integration, Express, async/await patterns, API design collaboration</span>
+                </div>
+                <div class="entry">
+                    <h3>CI/CD</h3>
+                    <p>4 Years</p>
+                    <span class="skill-detail">GitHub Actions, Docker, automated pipelines, deployment workflows</span>
+                </div>
+                <div class="entry">
+                    <h3>Nx</h3>
+                    <p>3 Years</p>
+                    <span class="skill-detail">Monorepo architecture, shared libraries, Module Federation, build optimisation</span>
+                </div>
             </div>
         </section>
         <section class="projects container reveal">
@@ -97,7 +122,7 @@
                     <img src="./assets/ledger.png" alt="Screenshot of Ledger Stream project" loading="lazy">
                     <h3>Ledger Stream</h3>
                     <p>TYPESCRIPT ANGULAR WEBSOCKETS</p>
-                    <p class="project-desc">Real-time financial ledger powered by a custom Angular WebSocket service. Implements OnPush change detection to handle high-frequency data streams without UI jank.</p>
+                    <p class="project-desc">Real-time ledger with a custom WebSocket service, RxJS broadcasting, and OnPush + async pipe throughout — zero manual change detection triggers.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank">
                             <button>Github</button> 
@@ -111,7 +136,7 @@
                     <img src="./assets/invoice.png" alt="Screenshot of InvoiceFlow project" loading="lazy">
                     <h3>InvoiceFlow</h3>
                     <p>HTML CSS TYPESCRIPT ANGULAR</p>
-                    <p class="project-desc">End-to-end billing lifecycle manager with reactive forms, draft/pending/paid state machine, and a fully accessible UI built on Angular's CDK.</p>
+                    <p class="project-desc">Billing lifecycle manager with CDK-based form primitives, WCAG 2.1 AA, and a finite state machine (draft → pending → paid) enforced at the service layer.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/invoice-app" target="_blank">
                             <button>Github</button> 
@@ -125,7 +150,7 @@
                     <img src="./assets/password.png" alt="Screenshot of VaultKey project" loading="lazy">
                     <h3>VaultKey</h3>
                     <p>HTML CSS TYPESCRIPT ANGULAR</p>
-                    <p class="project-desc">Entropy-based credential generator using the Web Crypto API. Configurable complexity rules with real-time strength scoring and zero external dependencies.</p>
+                    <p class="project-desc">Zero-dependency credential generator using the Web Crypto API. Standalone components with Signals for reactive state — no NgModules, no external libraries.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/password-generator" target="_blank">
                             <button>Github</button> 
@@ -139,7 +164,7 @@
                     <img src="./assets/devjobs.jpg" alt="Screenshot of TalentBoard project" loading="lazy">
                     <h3>TalentBoard</h3>
                     <p>HTML CSS JAVASCRIPT ANGULAR</p>
-                    <p class="project-desc">Filterable developer job board with dynamic search, contract/full-time toggles, and Angular routing. Optimised with trackBy and virtual scroll for large result sets.</p>
+                    <p class="project-desc">Job board with CDK Virtual Scroll for 1000+ listings, trackBy to cut re-renders, lazy-loaded routes, and filter state synced to URL query params.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/devjobs-FE.git" target="_blank">
                             <button>Github</button> 
@@ -153,7 +178,7 @@
                     <img src="./assets/entertainment.png" alt="Screenshot of Flickvault project" loading="lazy">
                     <h3>Flickvault</h3>
                     <p>HTML CSS JAVASCRIPT ANGULAR</p>
-                    <p class="project-desc">Personal media discovery hub with bookmarking, category filtering, and seamless TV/movie toggling. Built with lazy-loaded feature modules and a clean signal-based store.</p>
+                    <p class="project-desc">Media hub built on Angular 17+: signal-based store, lazy-loaded feature modules with preloading, and a shared component layer structured like a design system.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/entertainment" target="_blank">
                             <button>Github</button> 
@@ -167,7 +192,7 @@
                     <img src="./assets/link.jpg" alt="Screenshot of LinkForge project" loading="lazy">
                     <h3>LinkForge</h3>
                     <p>HTML CSS JAVASCRIPT REACT</p>
-                    <p class="project-desc">URL shortener with click analytics and copy-to-clipboard UX. Built in React to demonstrate cross-framework adaptability alongside a primary Angular stack.</p>
+                    <p class="project-desc">URL shortener with click analytics and clipboard UX. Intentionally minimal to isolate component state patterns.</p>
                     <div class="actions">
                         <a href="https://github.com/DevelopStudios/shortify-app" target="_blank">
                             <button>Github</button>
