@@ -1,272 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Charl Roux</title>
-    <meta name="description" content="Charl Roux - Principal Angular Engineer. 7 years building enterprise Angular systems, browser-native AI with WebLLM/WebGPU, and high-concurrency data streams.">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Portfolio | Charl Roux">
-    <meta property="og:description" content="Principal Angular Engineer based in Michigan. Angular v2–v19, WebLLM/WebGPU browser-native AI, RxJS, TypeScript, enterprise-scale front-end systems.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charl Roux — Principal Angular Engineer</title>
+  <meta name="description" content="Charl Roux — Principal Angular Engineer. 7 years of enterprise Angular, browser-native AI with WebLLM and WebGPU, reactive systems with RxJS. Based in Michigan, open to remote." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Charl Roux — Principal Angular Engineer" />
+  <meta property="og:description" content="Angular v2→v19, WebLLM/WebGPU browser-native AI, RxJS, TypeScript, enterprise-scale systems." />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav class="container">
-        <div class="title">
-            charlroux
-        </div>
-        <div class="icons">
-            <div class="icon">
-                <a href="https://github.com/DevelopStudios" target="_blank" aria-label="GitHub Profile">
-                    <img src="./assets/github.svg" alt="Github icon">
-                </a>
-            </div>
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" aria-label="LinkedIn Profile">
-                    <img src="./assets/LinkedIn.svg" alt="LinkedIn icon">
-                </a>
-            </div>
-        </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero container">
-                <img class="artifact" src="./assets/artifact.png" alt="artifact">
-                
-                <div class="left">
-                    <h2>Principal Angular Engineer</h2><br>
-                    <h2>I'm <span class="underline">Charl Roux</span></h2>
-                    <p>7 years building enterprise Angular systems — most recently integrating browser-native AI (WebLLM, WebGPU) directly into Angular 19. I lead complex migrations, design reactive state with RxJS, and ship accessible production UIs that hold up at scale — based in Michigan, open to remote.</p>
-                    <button class="hero" onClick="document.getElementById('contact').scrollIntoView()">
-                        CONTACT ME
-                    </button>
-                </div>
-                <div class="right">
-                    <img class="oval" src="./assets/oval.svg">
-                    <div class="spacer"></div>
-                    <img class="self" src="./assets/bg-rm.png" alt="Charl Roux profile picture" loading="eager">
-                </div>
-         
-        </section>
-        <hr class="global-hr">
-        <section class="experience container reveal">
-            <div class="entries">
-                <div class="entry">
-                    <h3>HTML</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">Semantic markup, accessibility (WCAG 2.1), SEO best practices</span>
-                </div>
-                <div class="entry">
-                    <h3>CSS</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">CSS architecture, animations, responsive design systems</span>
-                </div>
-                <div class="entry">
-                    <h3>JavaScript</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">ES2022+, async patterns, performance optimisation</span>
-                </div>
-                <div class="entry">
-                    <h3>Typescript</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">Strict typing, generics, advanced type utilities</span>
-                </div>
-                <div class="entry">
-                    <h3>RxJs</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">Complex stream composition, custom operators, memory leak prevention</span>
-                </div>
-                <div class="entry">
-                    <h3>Angular</h3>
-                    <p>7 Years</p>
-                    <span class="skill-detail">v2→v19 migrations, OnPush strategy, standalone components, Signals</span>
-                </div>
-                <div class="entry">
-                    <h3>NgRx</h3>
-                    <p>5 Years</p>
-                    <span class="skill-detail">Store, Effects, Selectors, Entity adapter, ComponentStore</span>
-                </div>
-                <div class="entry">
-                    <h3>Testing</h3>
-                    <p>5 Years</p>
-                    <span class="skill-detail">Cypress E2E, Jest unit tests, TestBed, 50% regression reduction</span>
-                </div>
-                <div class="entry">
-                    <h3>Node.js</h3>
-                    <p>4 Years</p>
-                    <span class="skill-detail">REST API integration, Express, async/await patterns, API design collaboration</span>
-                </div>
-                <div class="entry">
-                    <h3>CI/CD</h3>
-                    <p>4 Years</p>
-                    <span class="skill-detail">GitHub Actions, Docker, automated pipelines, deployment workflows</span>
-                </div>
-            </div>
-        </section>
-        <section class="projects container reveal">
-            <h2>Projects</h2>
-            <div class="portfolio-entries">
-                <div class="entry">
-                    <img src="./assets/ledger.png" alt="Screenshot of Ledger Stream project" loading="lazy">
-                    <h3>Ledger Stream</h3>
-                    <p>TYPESCRIPT ANGULAR WEBSOCKETS WEBLLM</p>
-                    <p class="project-desc">Real-time crypto feed into a 10,000-row virtual grid. Adjustable RxJS throttle, in-browser LLM flags significant moves — no server.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank">
-                            <button>Github</button> 
-                        </a>
-                        <a href="https://precisionledger-j423d.kinsta.page/" target="_blank">
-                        <button>Preview</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <img src="./assets/invoice.png" alt="Screenshot of InvoiceFlow project" loading="lazy">
-                    <h3>InvoiceFlow</h3>
-                    <p>HTML CSS TYPESCRIPT ANGULAR</p>
-                    <p class="project-desc">Invoice lifecycle app where draft → pending → paid is a finite state machine at the service layer — invalid transitions are structurally impossible.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/invoice-app" target="_blank">
-                            <button>Github</button> 
-                        </a>
-                        <a href="https://invoice-1qmx1.kinsta.page/" target="_blank">
-                        <button>Preview</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <img src="./assets/password.png" alt="Screenshot of VaultKey project" loading="lazy">
-                    <h3>VaultKey</h3>
-                    <p>HTML CSS TYPESCRIPT ANGULAR</p>
-                    <p class="project-desc">Generates a strong password then maps each character to a word for easy recall. Runs entirely in a Web Worker via local LLM — no server, no data leaves the device.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/password-generator" target="_blank">
-                            <button>Github</button> 
-                        </a>
-                        <a href="https://password-generator-duah3.kinsta.page" target="_blank">
-                        <button>Preview</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <img src="./assets/devjobs.jpg" alt="Screenshot of TalentBoard project" loading="lazy">
-                    <h3>TalentBoard</h3>
-                    <p>HTML CSS JAVASCRIPT ANGULAR</p>
-                    <p class="project-desc">1,000+ listings virtualized in a single page. WebGPU-powered search by title, expertise, or location — filter state synced to the URL.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/devjobs-FE.git" target="_blank">
-                            <button>Github</button> 
-                        </a>
-                        <a href="https://devjobs-fe-a0h85.kinsta.page" target="_blank">
-                        <button>Preview</button>
-                        </a>
-                    </div>
-                </div>
-                <!-- <div class="entry">
-                    <img src="./assets/entertainment.png" alt="Screenshot of Flickvault project" loading="lazy">
-                    <h3>Flickvault</h3>
-                    <p>HTML CSS JAVASCRIPT ANGULAR</p>
-                    <p class="project-desc">Media hub built on Angular 17+: signal-based store, lazy-loaded feature modules with preloading, and a shared component layer structured like a design system.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/entertainment" target="_blank">
-                            <button>Github</button> 
-                        </a>
-                        <a href="https://entertainment-vk0w5.kinsta.page" target="_blank">
-                        <button>Preview</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="entry">
-                    <img src="./assets/link.jpg" alt="Screenshot of LinkForge project" loading="lazy">
-                    <h3>LinkForge</h3>
-                    <p>HTML CSS JAVASCRIPT REACT</p>
-                    <p class="project-desc">URL shortener with click analytics and clipboard UX. Intentionally minimal to isolate component state patterns.</p>
-                    <div class="actions">
-                        <a href="https://github.com/DevelopStudios/shortify-app" target="_blank">
-                            <button>Github</button>
-                        </a>
-                        <a href="https://shortify-app-larcr.kinsta.page/"  target="_blank">
-                            <button>Preview</button>
-                        </a>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <section class="contact container-bottom reveal" id="contact">
-            <div class="flex">
-                <div class="left">
-                    <img class="artifact" src="./assets/artifact.png" alt="artifact">
-                    <h2>Contact</h2><br>
-                    <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-                </div>
-                <div class="right">
-                    <form action="https://formsubmit.co/charlroux641@gmail.com" method="POST">
-                        <p>
-                          <label for="name" class="visually-hidden">Name</label>
-                          <input type="text" id="name" name="name" placeholder="NAME" autocomplete="name" required/>
-                        </p>
-                        <p>
-                          <label for="mail" class="visually-hidden">Email</label>
-                          <input type="email" id="mail" name="email" placeholder="EMAIL" inputmode="email" autocomplete="email" required/>
-                        </p>
-                        <p>
-                          <label for="msg" class="visually-hidden">Message</label>
-                          <textarea id="msg" name="message" placeholder="MESSAGE" rows="5" required></textarea>
-                        </p>
-                        <p class="button">
-                            <button type="submit">SEND MESSAGE</button>
-                          </p>
-                      </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="flex container">
-            <div class="left">
-                <div class="title">
-                    charlroux
-                </div>
-            </div>
-            <div class="social">
-                <div class="icons">
-                    <div class="icon">
-                        <a href="https://github.com/DevelopStudios" target="_blank" aria-label="GitHub Profile">
-                            <img src="./assets/github.svg" alt="Github icon">
-                        </a>
-                    </div>
-                    <div class="icon">
-                        <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" aria-label="LinkedIn Profile">
-                            <img src="./assets/LinkedIn.svg" alt="LinkedIn icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <script>
-        const observerOptions = {
-            threshold: 0.15
-        };
+  <!-- ============================================================ -->
+  <!-- Status bar / header                                           -->
+  <!-- ============================================================ -->
+  <header class="status">
+    <div class="wrap status-bar">
+      <div class="left">
+        <span class="dot" aria-hidden="true"></span>
+        <span>online · open to remote</span>
+      </div>
+      <div class="center">
+        <span class="prompt">~</span>&nbsp;<span class="path">charl-roux</span>&nbsp;<span style="color:var(--fg-mute)">·</span>&nbsp;<span class="clock" data-clock>—— EDT</span>&nbsp;<span style="color:var(--fg-mute)">·</span>&nbsp;Michigan, USA
+      </div>
+      <div class="right">
+        <a href="#projects" style="color:var(--fg-mid);font-size:var(--fs-mono);letter-spacing:.08em">projects</a>
+        <a href="#skills"   style="color:var(--fg-mid);font-size:var(--fs-mono);letter-spacing:.08em">skills</a>
+        <a href="#contact"  style="color:var(--fg-mid);font-size:var(--fs-mono);letter-spacing:.08em">contact</a>
+        <a href="https://github.com/DevelopStudios" target="_blank" rel="noopener" aria-label="GitHub">
+          <img class="icon-link" src="./assets/github.svg" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img class="icon-link" src="./assets/LinkedIn.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </header>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
+  <main>
 
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
+    <!-- ============================================================ -->
+    <!-- Hero                                                          -->
+    <!-- ============================================================ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+
+        <div class="hero-left">
+          <span class="eyebrow">// 00 — index</span>
+
+          <h1>
+            <span class="role-tag">Principal Angular Engineer</span>
+            building reactive,
+            browser-native
+            <span class="name">interfaces<span class="cursor" aria-hidden="true"></span></span>
+          </h1>
+
+          <p class="hero-bio">
+            I'm <strong>Charl Roux</strong> — 7 years shipping enterprise Angular systems, most recently
+            wiring <strong>WebLLM</strong> and <strong>WebGPU</strong> directly into Angular 19. I lead
+            complex migrations, design reactive state with <strong>RxJS</strong>, and ship accessible
+            production UIs that hold up at scale.
+          </p>
+
+          <dl class="hero-meta">
+            <div class="group"><dt>LOC</dt><dd>Michigan, USA</dd></div>
+            <span class="sep"></span>
+            <div class="group"><dt>TZ</dt><dd>EDT · UTC−4</dd></div>
+            <span class="sep"></span>
+            <div class="group"><dt>EXP</dt><dd>7 years</dd></div>
+            <span class="sep"></span>
+            <div class="group"><dt>STATUS</dt><dd>open to remote</dd></div>
+          </dl>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#projects">See selected work</a>
+          </div>
+        </div>
+
+        <aside class="portrait-card" aria-label="Portrait">
+          <div class="head">
+            <span class="traffic" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>./portrait.png</span>
+          </div>
+          <div class="frame">
+            <img src="./assets/bg-rm.png" alt="Charl Roux" loading="eager" />
+            <div class="corners" aria-hidden="true"></div>
+          </div>
+          <div class="meta">
+            <span>NAME</span><span>charl_roux</span>
+            <span>ROLE</span><span>principal_eng</span>
+            <span>STACK</span><span>angular · ts · rx</span>
+            <span>BUILD</span><span>v2026.05</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- NOW block — terminal readout                                  -->
+    <!-- ============================================================ -->
+    <section class="now reveal">
+      <div class="wrap now-grid">
+        <h2>now</h2>
+
+        <div class="readout">
+          <div class="row">
+            <span class="k">currently</span>
+            <span class="v">browser-native AI in Angular — WebLLM, WebGPU, Web Workers.</span>
+            <span class="tag">focus</span>
+          </div>
+          <div class="row">
+            <span class="k">shipping</span>
+            <span class="v">a 10k-row reactive grid with adjustable RxJS throttling.</span>
+            <span class="tag">in&nbsp;flight</span>
+          </div>
+          <div class="row">
+            <span class="k">signals</span>
+            <span class="v">migrating reactive primitives to Angular Signals — fine-grained, zone-less, no manual <code>markForCheck</code>.</span>
+            <span class="tag">pattern</span>
+          </div>
+          <div class="row">
+            <span class="k">onpush</span>
+            <span class="v">OnPush change detection by default — async pipe end-to-end, immutable inputs, zero <code>zone.run</code> escapes.</span>
+            <span class="tag">perf</span>
+          </div>
+          <div class="row">
+            <span class="k">websockets</span>
+            <span class="v">long-lived RxJS socket streams with exponential backoff, throttle-trailing buffers, and graceful reconnect.</span>
+            <span class="tag">infra</span>
+          </div>
+          <div class="row">
+            <span class="k">available</span>
+            <span class="v mono">remote · contract or full-time · starting Q3 2026</span>
+            <span class="tag">hiring</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- Projects — bento                                              -->
+    <!-- ============================================================ -->
+    <section class="projects reveal" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2><span class="num">01</span><em>Selected work</em></h2>
+          <p class="lede">Four projects across reactive streams, finite-state UIs, on-device AI,
+            and large-scale virtualization. Each runs entirely in the browser.</p>
+        </div>
+
+        <div class="bento">
+
+          <!-- Featured -->
+          <article class="tile featured">
+            <div class="shot">
+              <img src="./assets/ledger.png" alt="Ledger Stream — real-time crypto grid" loading="lazy" />
+            </div>
+            <div class="tile-head">
+              <span class="idx">// 01 — featured</span>
+              <span class="status-tag">live</span>
+            </div>
+            <h3>Ledger Stream</h3>
+            <div class="stack">
+              <span>Angular</span><span>·</span>
+              <span>RxJS</span><span>·</span>
+              <span>WebSockets</span><span>·</span>
+              <span>WebLLM</span>
+            </div>
+            <p class="desc">
+              Real-time crypto feed streamed into a 10,000-row virtual grid. An adjustable
+              RxJS throttle decouples render pressure from the socket; an in-browser LLM
+              flags significant moves — no server, no backend, no API key.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank" rel="noopener">Source</a>
+              <a href="https://precisionledger-j423d.kinsta.page/" target="_blank" rel="noopener">Live preview</a>
+            </div>
+          </article>
+
+          <!-- Tall right -->
+          <article class="tile tall">
+            <div class="shot">
+              <img src="./assets/invoice.png" alt="InvoiceFlow — invoice state machine" loading="lazy" />
+            </div>
+            <div class="tile-head">
+              <span class="idx">// 02</span>
+              <span class="status-tag">live</span>
+            </div>
+            <h3>InvoiceFlow</h3>
+            <div class="stack">
+              <span>Angular</span><span>·</span>
+              <span>CDK</span><span>·</span>
+              <span>TypeScript</span>
+            </div>
+            <p class="desc">
+              Invoice lifecycle app where <em>draft → pending → paid</em> is a finite state
+              machine at the service layer — invalid transitions are structurally impossible.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DevelopStudios/invoice-app" target="_blank" rel="noopener">Source</a>
+              <a href="https://invoice-1qmx1.kinsta.page/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <!-- Half row 1 -->
+          <article class="tile half">
+            <div class="shot">
+              <img src="./assets/password.png" alt="VaultKey — on-device password helper" loading="lazy" />
+            </div>
+            <div class="tile-head">
+              <span class="idx">// 03</span>
+              <span class="status-tag">live</span>
+            </div>
+            <h3>VaultKey</h3>
+            <div class="stack">
+              <span>Angular</span><span>·</span>
+              <span>WebLLM</span><span>·</span>
+              <span>Web Worker</span>
+            </div>
+            <p class="desc">
+              Generates a strong password and maps each character to a memorable word.
+              Runs entirely in a Web Worker via a local LLM — no server, nothing leaves the device.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DevelopStudios/password-generator" target="_blank" rel="noopener">Source</a>
+              <a href="https://password-generator-duah3.kinsta.page" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <!-- Half row 2 -->
+          <article class="tile half">
+            <div class="shot">
+              <img src="./assets/devjobs.jpg" alt="TalentBoard — virtualized jobs board" loading="lazy" />
+            </div>
+            <div class="tile-head">
+              <span class="idx">// 04</span>
+              <span class="status-tag">live</span>
+            </div>
+            <h3>TalentBoard</h3>
+            <div class="stack">
+              <span>Angular</span><span>·</span>
+              <span>Transformers.js</span><span>·</span>
+              <span>WebGPU</span>
+            </div>
+            <p class="desc">
+              1,000+ listings virtualized on a single page. Hybrid vector + BM25 search via
+              Orama and all-MiniLM-L6-v2, running on WebGPU; filter state synced to the URL.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DevelopStudios/devjobs-FE.git" target="_blank" rel="noopener">Source</a>
+              <a href="https://devjobs-fe-a0h85.kinsta.page" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <!-- Stat tiles to round out the bento -->
+          <article class="tile stat">
+            <div class="tile-head">
+              <span class="idx">// regression</span>
+            </div>
+            <div class="big">−50<span style="font-size:.5em;color:var(--fg-mute)">%</span></div>
+            <div class="label">Regression defects, after introducing a Cypress/Jest test layer on a legacy Angular monolith.</div>
+          </article>
+
+          <article class="tile stat">
+            <div class="tile-head">
+              <span class="idx">// migrated</span>
+            </div>
+            <div class="big">v2→v19</div>
+            <div class="label">Angular versions shipped, across green-field builds and incremental migrations of multi-team apps.</div>
+          </article>
+
+          <article class="tile stat">
+            <div class="tile-head">
+              <span class="idx">// runtime</span>
+            </div>
+            <div class="big">100<span style="font-size:.5em;color:var(--fg-mute)">%</span></div>
+            <div class="label">Of inference for the AI-powered projects runs on-device — no server, no API key, no telemetry.</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- Skills — tree                                                 -->
+    <!-- ============================================================ -->
+    <section class="skills reveal" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <h2><span class="num">02</span><em>Skills &amp; stack</em></h2>
+          <p class="lede">A pragmatic, opinionated stack — picked because it scales for teams,
+            not because it's fashionable.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="tree">
+            <span class="cmd"><span class="prompt">$</span>tree ./stack --years</span>
+            <span class="group">frontend/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">angular</span><span class="dots">·······</span><span class="meta">v2&nbsp;→&nbsp;v19,&nbsp;signals,&nbsp;standalone</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">typescript</span><span class="dots">·····</span><span class="meta">strict,&nbsp;generics,&nbsp;type&nbsp;utils</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">rxjs</span><span class="dots">···········</span><span class="meta">streams,&nbsp;custom&nbsp;operators</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">ngrx</span><span class="dots">···········</span><span class="meta">store,&nbsp;effects,&nbsp;entity</span><span class="yrs">&nbsp;&nbsp;5y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">html</span><span class="dots">···········</span><span class="meta">semantic,&nbsp;WCAG&nbsp;2.1</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">css</span><span class="dots">············</span><span class="meta">grid,&nbsp;animations,&nbsp;arch</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+
+            <span class="group">browser-native&nbsp;AI/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">webllm</span><span class="dots">·········</span><span class="meta">qwen2.5,&nbsp;in-browser&nbsp;LLM</span><span class="yrs">&nbsp;&nbsp;1y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">webgpu</span><span class="dots">·········</span><span class="meta">transformers.js,&nbsp;embeddings</span><span class="yrs">&nbsp;&nbsp;1y</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">web&nbsp;workers</span><span class="dots">····</span><span class="meta">off-main-thread&nbsp;inference</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
+          </div>
+
+          <div class="tree">
+            <span class="cmd"><span class="prompt">$</span>tree ./stack --platform</span>
+            <span class="group">platform/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">node.js</span><span class="dots">········</span><span class="meta">express,&nbsp;async/await,&nbsp;REST</span><span class="yrs">&nbsp;&nbsp;4y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">ci-cd</span><span class="dots">··········</span><span class="meta">github&nbsp;actions,&nbsp;docker</span><span class="yrs">&nbsp;&nbsp;4y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">nx</span><span class="dots">·············</span><span class="meta">monorepos,&nbsp;affected&nbsp;graph</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">module-fed</span><span class="dots">·····</span><span class="meta">runtime&nbsp;micro-frontends</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
+
+            <span class="group">quality/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">cypress</span><span class="dots">········</span><span class="meta">e2e,&nbsp;visual&nbsp;regression</span><span class="yrs">&nbsp;&nbsp;5y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">jest</span><span class="dots">···········</span><span class="meta">unit,&nbsp;TestBed</span><span class="yrs">&nbsp;&nbsp;5y</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">accessibility</span><span class="dots">··</span><span class="meta">aria,&nbsp;keyboard,&nbsp;axe</span><span class="yrs">&nbsp;&nbsp;6y</span></div>
+
+            <span class="group">approach/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">reactive</span><span class="dots">·······</span><span class="meta">streams&nbsp;over&nbsp;imperative</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">strict-types</span><span class="dots">···</span><span class="meta">types&nbsp;as&nbsp;documentation</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">a11y-first</span><span class="dots">·····</span><span class="meta">a&nbsp;baseline,&nbsp;not&nbsp;a&nbsp;polish</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- Contact                                                        -->
+    <!-- ============================================================ -->
+    <section class="contact reveal" id="contact">
+      <div class="wrap contact-grid">
+
+        <div>
+          <span class="eyebrow">// 03 — contact</span>
+          <h2>Let's <em>talk</em>.</h2>
+          <p class="lede">
+            I'd love to hear about your project and how I could help. Drop a note via the form,
+            or reach me directly — I read everything and reply within a day or two.
+          </p>
+
+          <div class="direct">
+            <a href="mailto:charlroux641@gmail.com">charlroux641@gmail.com</a>
+            <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" rel="noopener">linkedin.com/in/charl-roux</a>
+            <a href="https://github.com/DevelopStudios" target="_blank" rel="noopener">github.com/DevelopStudios</a>
+          </div>
+        </div>
+
+        <form class="term-form" action="https://formsubmit.co/charlroux641@gmail.com" method="POST">
+          <div class="term-head">
+            <span class="dots"><span></span><span></span><span></span></span>
+            <span>contact.sh</span>
+            <span class="title">— new message</span>
+          </div>
+          <div class="body">
+            <label>
+              <span class="lab">name:</span>
+              <input type="text" name="name" placeholder="your name" autocomplete="name" required />
+            </label>
+            <label>
+              <span class="lab">email:</span>
+              <input type="email" name="email" placeholder="you@domain.com" inputmode="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span class="lab">message:</span>
+              <textarea name="message" rows="6" placeholder="tell me about the project, timeline, stack…" required></textarea>
+            </label>
+            <div class="submit-row">
+              <span class="hint">⏎ shift+enter for newline · enter to send</span>
+              <button type="submit">Send →</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- Footer                                                          -->
+  <!-- ============================================================ -->
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <div class="sig">charl roux</div>
+      <div class="meta">
+        <span>© 2026 — built from scratch, no framework</span>
+        <a href="https://github.com/DevelopStudios" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:charlroux641@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    window.__TWEAK_DEFAULTS__ = { "palette": "amber" };
+  </script>
 </body>
 </html>
