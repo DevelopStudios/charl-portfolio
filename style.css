@@ -271,8 +271,8 @@ main section.projects .portfolio-entries .entry:hover img {
 
 main section.projects .portfolio-entries {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 56px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 24px;
 }
 
 main section.projects .actions {
@@ -460,7 +460,7 @@ textarea:focus {
         bottom: 10%;
     }
     main section.projects .portfolio-entries {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
