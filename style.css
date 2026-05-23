@@ -147,7 +147,7 @@ main section.hero h2{
 }
 
 main section.hero p{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     font-size: var(--fs-body);
     letter-spacing: 0;
@@ -185,6 +185,7 @@ main section.experience .entries {
 }
 main section.experience.container .entries .entry {
     padding: 20px 0;
+    border-top: 1px solid #2a2a2a;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 main section.experience.container .entries .entry:hover {
@@ -192,17 +193,27 @@ main section.experience.container .entries .entry:hover {
     color: var(--color-green);
 }
 main section.experience.container .entries .entry h3 {
-    font-size: 48px;
-    letter-spacing: -1.5px;
+    font-size: 28px;
+    letter-spacing: -0.5px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 main section.experience.container .entries .entry p {
-    font-size: 18px;
-    font-size: var(--fs-body);
-    color: var(--color-grey);
-    letter-spacing: 0;
+    font-size: 13px;
+    color: var(--color-green);
+    letter-spacing: 0.5px;
     margin: 0;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.skill-detail {
+    display: block;
+    font-size: 14px;
+    color: var(--color-grey);
+    line-height: 1.5;
+    margin-top: 4px;
+    font-weight: 300;
 }
 
 main section.projects.container h2 {
@@ -229,12 +240,21 @@ main section.projects .portfolio-entries .entry h3 {
     margin-bottom: 12px;
 }
 
-main section.projects .portfolio-entries .entry p {
-    font-size: 18px;
-    font-size: var(--fs-body);
+main section.projects .portfolio-entries .entry p:not(.project-desc) {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--color-green);
+    font-weight: 600;
+    margin: 0 0 10px;
+    opacity: 0.8;
+}
+
+main section.projects .portfolio-entries .entry p.project-desc {
+    font-size: 15px;
     color: var(--color-grey);
     letter-spacing: 0;
     margin: 0;
+    line-height: 1.65;
 }
 
 main section.projects .portfolio-entries .entry img {
@@ -251,8 +271,8 @@ main section.projects .portfolio-entries .entry:hover img {
 
 main section.projects .portfolio-entries {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px 40px;
 }
 
 main section.projects .actions {
@@ -440,7 +460,7 @@ textarea:focus {
         bottom: 10%;
     }
     main section.projects .portfolio-entries {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
