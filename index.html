@@ -147,8 +147,8 @@
       <div class="wrap">
         <div class="section-head">
           <h2><span class="num">01</span><em>Selected work</em></h2>
-          <p class="lede">Four projects across reactive streams, finite-state UIs, on-device AI,
-            and large-scale virtualization. Each runs entirely in the browser.</p>
+          <p class="lede">Five projects across reactive streams, finite-state UIs, on-device AI,
+            local RAG pipelines, and large-scale virtualization. Each runs entirely in the browser.</p>
         </div>
 
         <div class="bento">
@@ -156,10 +156,38 @@
           <!-- Featured -->
           <article class="tile featured">
             <div class="shot">
-              <img src="./assets/ledger.png" alt="Ledger Stream — real-time crypto grid" loading="lazy" />
+              <img src="./assets/doclocal.png" alt="DocLocal — local PDF chat assistant" loading="lazy" />
             </div>
             <div class="tile-head">
               <span class="idx">// 01 — featured</span>
+              <span class="status-tag">live</span>
+            </div>
+            <h3>DocLocal</h3>
+            <div class="stack">
+              <span>Angular</span><span>·</span>
+              <span>NX</span><span>·</span>
+              <span>WebLLM</span><span>·</span>
+              <span>Transformers.js</span>
+            </div>
+            <p class="desc">
+              Local PDF chat assistant running entirely in the browser — upload a document,
+              ask questions, get answers with inline citations. RAG pipeline with local
+              embeddings and on-device LLM via WebGPU; no server, no API key, nothing
+              leaves the device.
+            </p>
+            <div class="links">
+              <a href="https://github.com/DevelopStudios/doclocal" target="_blank" rel="noopener">Source</a>
+              <a href="https://doclocal-1bb7p.kinsta.page/" target="_blank" rel="noopener">Live preview</a>
+            </div>
+          </article>
+
+          <!-- Tall right -->
+          <article class="tile tall">
+            <div class="shot">
+              <img src="./assets/ledger.png" alt="Ledger Stream — real-time crypto grid" loading="lazy" />
+            </div>
+            <div class="tile-head">
+              <span class="idx">// 02</span>
               <span class="status-tag">live</span>
             </div>
             <h3>Ledger Stream</h3>
@@ -180,13 +208,13 @@
             </div>
           </article>
 
-          <!-- Tall right -->
-          <article class="tile tall">
+          <!-- Half row 1 -->
+          <article class="tile half">
             <div class="shot">
               <img src="./assets/invoice.png" alt="InvoiceFlow — invoice state machine" loading="lazy" />
             </div>
             <div class="tile-head">
-              <span class="idx">// 02</span>
+              <span class="idx">// 03</span>
               <span class="status-tag">live</span>
             </div>
             <h3>InvoiceFlow</h3>
@@ -205,13 +233,13 @@
             </div>
           </article>
 
-          <!-- Half row 1 -->
+          <!-- Half row 2 -->
           <article class="tile half">
             <div class="shot">
               <img src="./assets/password.png" alt="VaultKey — on-device password helper" loading="lazy" />
             </div>
             <div class="tile-head">
-              <span class="idx">// 03</span>
+              <span class="idx">// 04</span>
               <span class="status-tag">live</span>
             </div>
             <h3>VaultKey</h3>
@@ -230,13 +258,10 @@
             </div>
           </article>
 
-          <!-- Half row 2 -->
-          <article class="tile half">
-            <div class="shot">
-              <img src="./assets/devjobs.jpg" alt="TalentBoard — virtualized jobs board" loading="lazy" />
-            </div>
+          <!-- Compact card + stat tiles -->
+          <article class="tile compact">
             <div class="tile-head">
-              <span class="idx">// 04</span>
+              <span class="idx">// 05</span>
               <span class="status-tag">live</span>
             </div>
             <h3>TalentBoard</h3>
@@ -255,7 +280,6 @@
             </div>
           </article>
 
-          <!-- Stat tiles to round out the bento -->
           <article class="tile stat">
             <div class="tile-head">
               <span class="idx">// regression</span>
@@ -270,14 +294,6 @@
             </div>
             <div class="big">v2→v19</div>
             <div class="label">Angular versions shipped, across green-field builds and incremental migrations of multi-team apps.</div>
-          </article>
-
-          <article class="tile stat">
-            <div class="tile-head">
-              <span class="idx">// runtime</span>
-            </div>
-            <div class="big">100<span style="font-size:.5em;color:var(--fg-mute)">%</span></div>
-            <div class="label">Of inference for the AI-powered projects runs on-device — no server, no API key, no telemetry.</div>
           </article>
 
         </div>

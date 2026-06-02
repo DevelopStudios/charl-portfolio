@@ -678,6 +678,10 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
   max-width: 28ch;
 }
 
+.tile.compact {
+  grid-column: span 4;
+}
+
 /* ============================================================
    Skills — tree command output
    ============================================================ */
