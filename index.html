@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charl Roux — Angular Software Engineer</title>
-  <meta name="description" content="Charl Roux — Angular Software Engineer. 7 years of enterprise Angular, browser-native AI with WebLLM and WebGPU, reactive systems with RxJS. Based in Michigan, open to full-time remote roles. US-authorized, no sponsorship needed." />
+  <title>Charl Roux — Software Engineer</title>
+  <meta name="description" content="Charl Roux — Software Engineer. 7 years of enterprise frontend architecture across Angular and React, browser-native AI with WebLLM and WebGPU, reactive systems with RxJS, and FastAPI backends. Based in Michigan, open to full-time remote roles. US-authorized, no sponsorship needed." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Charl Roux — Angular Software Engineer" />
-  <meta property="og:description" content="Angular v2→v19, WebLLM/WebGPU browser-native AI, RxJS, TypeScript, enterprise-scale systems." />
+  <meta property="og:title" content="Charl Roux — Software Engineer" />
+  <meta property="og:description" content="Angular, React, TypeScript, WebLLM/WebGPU browser-native AI, RxJS, FastAPI — enterprise-scale systems." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,17 +54,18 @@
           <span class="eyebrow">// 00 — index</span>
 
           <h1>
-            <span class="role-tag">Angular Software Engineer</span>
+            <span class="role-tag">Software Engineer</span>
             building reactive,
             browser-native
             <span class="name">interfaces<span class="cursor" aria-hidden="true"></span></span>
           </h1>
 
           <p class="hero-bio">
-            I'm <strong>Charl Roux</strong> — 7 years shipping enterprise Angular systems, most recently
-            wiring <strong>WebLLM</strong> and <strong>WebGPU</strong> directly into Angular 19. I lead
-            complex migrations, design reactive state with <strong>RxJS</strong>, and ship accessible
-            production UIs that hold up at scale.
+            I'm <strong>Charl Roux</strong> — 7 years shipping enterprise frontend systems, deepest in
+            <strong>Angular</strong> but not defined by it: recently building browser-native AI with
+            <strong>WebLLM</strong>/<strong>WebGPU</strong>, and shipping a <strong>React</strong> +
+            <strong>FastAPI</strong> project outside my usual stack. I design reactive state, lead
+            complex migrations, and ship accessible production UIs that hold up at scale.
           </p>
 
           <dl class="hero-meta">
@@ -95,7 +96,7 @@
           <div class="meta">
             <span>NAME</span><span>charl_roux</span>
             <span>ROLE</span><span>senior_eng</span>
-            <span>STACK</span><span>angular · ts · rx</span>
+            <span>STACK</span><span>ts · angular · react</span>
             <span>BUILD</span><span>v2026.05</span>
           </div>
         </aside>
@@ -132,6 +133,11 @@
             <span class="tag">pattern</span>
           </div>
           <div class="row">
+            <span class="k">range</span>
+            <span class="v">also just shipped a React + FastAPI project — a live operator dashboard for a virtual BACnet device, first time outside Angular.</span>
+            <span class="tag">new</span>
+          </div>
+          <div class="row">
             <span class="k">background</span>
             <span class="v">7 years leading frontend architecture across cybersecurity SaaS, agency, and AI-native products.</span>
             <span class="tag">exp</span>
@@ -147,8 +153,9 @@
       <div class="wrap">
         <div class="section-head">
           <h2><span class="num">01</span><em>Selected work</em></h2>
-          <p class="lede">Five projects across reactive streams, finite-state UIs, on-device AI,
-            local RAG pipelines, and large-scale virtualization. Each runs entirely in the browser.</p>
+          <p class="lede">Five projects across reactive streams, finite-state UIs, live device
+            control, on-device AI, and large-scale virtualization — four run entirely in the
+            browser; one talks to a real FastAPI backend over REST and WebSocket.</p>
         </div>
 
         <div class="bento">
@@ -156,28 +163,27 @@
           <!-- Featured -->
           <article class="tile featured">
             <div class="shot">
-              <img src="./assets/doclocal.png" alt="DocLocal — local PDF chat assistant" loading="lazy" />
+              <img src="./assets/ahu-dashboard.jpg" alt="Virtual AHU Dashboard — live BACnet operator console" loading="lazy" />
             </div>
             <div class="tile-head">
               <span class="idx">// 01 — featured</span>
-              <span class="status-tag">live</span>
+              <span class="status-tag">in&nbsp;dev</span>
             </div>
-            <h3>DocLocal</h3>
+            <h3>Virtual AHU Dashboard</h3>
             <div class="stack">
-              <span>Angular</span><span>·</span>
-              <span>NX</span><span>·</span>
-              <span>WebLLM</span><span>·</span>
-              <span>Transformers.js</span>
+              <span>React</span><span>·</span>
+              <span>TypeScript</span><span>·</span>
+              <span>FastAPI</span><span>·</span>
+              <span>WebSocket</span>
             </div>
             <p class="desc">
-              Local PDF chat assistant running entirely in the browser — upload a document,
-              ask questions, get answers with inline citations. RAG pipeline with local
-              embeddings and on-device LLM via WebGPU; no server, no API key, nothing
-              leaves the device.
+              Operator console for a virtual BACnet air-handling unit — first project outside
+              Angular. React hooks drive a shared polling + WebSocket data layer against a
+              FastAPI backend: live point overrides, priority arrays, and alarm acks against a
+              real device model instead of mock data.
             </p>
             <div class="links">
-              <a href="https://github.com/DevelopStudios/doclocal" target="_blank" rel="noopener">Source</a>
-              <a href="https://doclocal-1bb7p.kinsta.page/" target="_blank" rel="noopener">Live preview</a>
+              <a href="https://github.com/DevelopStudios/virtual-ahu-dashboard" target="_blank" rel="noopener">Source</a>
             </div>
           </article>
 
@@ -326,7 +332,11 @@
             <span class="group">browser-native&nbsp;AI/</span>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">webllm</span><span class="dots">·········</span><span class="meta">qwen2.5,&nbsp;in-browser&nbsp;LLM</span><span class="yrs">&nbsp;&nbsp;1y</span></div>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">webgpu</span><span class="dots">·········</span><span class="meta">transformers.js,&nbsp;embeddings</span><span class="yrs">&nbsp;&nbsp;1y</span></div>
-            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">web&nbsp;workers</span><span class="dots">····</span><span class="meta">off-main-thread&nbsp;inference</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">web&nbsp;workers</span><span class="dots">····</span><span class="meta">off-main-thread&nbsp;inference</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
+
+            <span class="group">range/</span>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">react</span><span class="dots">···········</span><span class="meta">hooks,&nbsp;function&nbsp;components</span><span class="yrs">&nbsp;new</span></div>
+            <div class="row"><span class="branch">└──&nbsp;</span><span class="name">fastapi</span><span class="dots">·········</span><span class="meta">rest&nbsp;+&nbsp;websocket&nbsp;backend</span><span class="yrs">&nbsp;new</span></div>
           </div>
 
           <div class="tree">
