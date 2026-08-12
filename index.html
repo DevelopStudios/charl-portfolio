@@ -62,9 +62,10 @@
 
           <p class="hero-bio">
             I'm <strong>Charl Roux</strong> — 7 years shipping enterprise frontend systems, deepest in
-            <strong>Angular</strong> but not defined by it: recently building browser-native AI with
-            <strong>WebLLM</strong>/<strong>WebGPU</strong>, and shipping a <strong>React</strong> +
-            <strong>FastAPI</strong> project outside my usual stack. I design reactive state, lead
+            <strong>Angular</strong> but not defined by it: <strong>React</strong> on client delivery
+            since 2019, recently building browser-native AI with
+            <strong>WebLLM</strong>/<strong>WebGPU</strong>, and shipping React on top of a
+            <strong>FastAPI</strong> backend I wrote myself. I design reactive state, lead
             complex migrations, and ship accessible production UIs that hold up at scale.
           </p>
 
@@ -123,9 +124,9 @@
             <span class="tag">focus</span>
           </div>
           <div class="row">
-            <span class="k">shipping</span>
-            <span class="v">a 10,000-row real-time data grid with throttled WebSocket streams and in-browser AI analysis.</span>
-            <span class="tag">in&nbsp;flight</span>
+            <span class="k">shipped</span>
+            <span class="v">a 10,000-row real-time data grid with an adjustable RxJS bufferTime window over live WebSocket streams, plus in-browser AI analysis — live now.</span>
+            <span class="tag">live</span>
           </div>
           <div class="row">
             <span class="k">architecture</span>
@@ -134,12 +135,12 @@
           </div>
           <div class="row">
             <span class="k">range</span>
-            <span class="v">also just shipped a React + FastAPI project — a live operator dashboard for a virtual BACnet device, first time outside Angular.</span>
+            <span class="v">also just shipped a React + FastAPI project — a live operator dashboard for a virtual BACnet device, first time owning the backend as well as the UI.</span>
             <span class="tag">new</span>
           </div>
           <div class="row">
             <span class="k">background</span>
-            <span class="v">7 years leading frontend architecture across cybersecurity SaaS, agency, and AI-native products.</span>
+            <span class="v">7 years shipping production frontend — four on an enterprise cybersecurity SaaS platform, two and a half in agency delivery, the last nine months self-directed on browser-native AI.</span>
             <span class="tag">exp</span>
           </div>
         </div>
@@ -177,9 +178,9 @@
               <span>WebSocket</span>
             </div>
             <p class="desc">
-              Operator console for a virtual BACnet air-handling unit — first project outside
-              Angular. React hooks drive a shared polling + WebSocket data layer against a
-              FastAPI backend: live point overrides, priority arrays, and alarm acks against a
+              Operator console for a virtual BACnet air-handling unit — React front to FastAPI
+              back, end to end. React hooks drive a shared polling + WebSocket data layer against a
+              backend I wrote: live point overrides, priority arrays, and alarm acks against a
               real device model instead of mock data.
             </p>
             <div class="links">
@@ -191,13 +192,13 @@
           <!-- Tall right -->
           <article class="tile tall">
             <div class="shot">
-              <img src="./assets/ledger.png" alt="Ledger Stream — real-time crypto grid" loading="lazy" />
+              <img src="./assets/ledger.png" alt="Precision Ledger — real-time crypto grid" loading="lazy" />
             </div>
             <div class="tile-head">
               <span class="idx">// 02</span>
               <span class="status-tag">live</span>
             </div>
-            <h3>Ledger Stream</h3>
+            <h3>Precision Ledger</h3>
             <div class="stack">
               <span>Angular</span><span>·</span>
               <span>RxJS</span><span>·</span>
@@ -205,9 +206,10 @@
               <span>WebLLM</span>
             </div>
             <p class="desc">
-              Real-time crypto feed streamed into a 10,000-row virtual grid. An adjustable
-              RxJS throttle decouples render pressure from the socket; an in-browser LLM
-              flags significant moves — no server, no backend, no API key.
+              Real-time Binance feed streamed into a 10,000-row virtual grid. An adjustable
+              RxJS <code>bufferTime</code> window decouples render pressure from the socket —
+              500+ events/sec batched into one update per interval; an in-browser LLM
+              auto-analyzes any move over 2%. No server, no backend, no API key.
             </p>
             <div class="links">
               <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank" rel="noopener">Source</a>
@@ -299,7 +301,7 @@
             <div class="tile-head">
               <span class="idx">// migrated</span>
             </div>
-            <div class="big">v2→v19</div>
+            <div class="big">v7→v19</div>
             <div class="label">Angular versions shipped, across green-field builds and incremental migrations of multi-team apps.</div>
           </article>
 
@@ -323,10 +325,11 @@
           <div class="tree">
             <span class="cmd"><span class="prompt">$</span>tree ./stack --years</span>
             <span class="group">frontend/</span>
-            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">angular</span><span class="dots">·······</span><span class="meta">v2&nbsp;→&nbsp;v19,&nbsp;signals,&nbsp;standalone</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">angular</span><span class="dots">·······</span><span class="meta">v7&nbsp;→&nbsp;v19,&nbsp;signals,&nbsp;standalone</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">typescript</span><span class="dots">·····</span><span class="meta">strict,&nbsp;generics,&nbsp;type&nbsp;utils</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">rxjs</span><span class="dots">···········</span><span class="meta">streams,&nbsp;custom&nbsp;operators</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">ngrx</span><span class="dots">···········</span><span class="meta">store,&nbsp;effects,&nbsp;entity</span><span class="yrs">&nbsp;&nbsp;5y</span></div>
+            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">react</span><span class="dots">··········</span><span class="meta">hooks,&nbsp;redux,&nbsp;client&nbsp;delivery</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">html</span><span class="dots">···········</span><span class="meta">semantic,&nbsp;WCAG&nbsp;2.1</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
             <div class="row"><span class="branch">└──&nbsp;</span><span class="name">css</span><span class="dots">············</span><span class="meta">grid,&nbsp;animations,&nbsp;arch</span><span class="yrs">&nbsp;&nbsp;7y</span></div>
 
@@ -336,7 +339,6 @@
             <div class="row"><span class="branch">├──&nbsp;</span><span class="name">web&nbsp;workers</span><span class="dots">····</span><span class="meta">off-main-thread&nbsp;inference</span><span class="yrs">&nbsp;&nbsp;3y</span></div>
 
             <span class="group">range/</span>
-            <div class="row"><span class="branch">├──&nbsp;</span><span class="name">react</span><span class="dots">···········</span><span class="meta">hooks,&nbsp;function&nbsp;components</span><span class="yrs">&nbsp;new</span></div>
             <div class="row"><span class="branch">└──&nbsp;</span><span class="name">fastapi</span><span class="dots">·········</span><span class="meta">rest&nbsp;+&nbsp;websocket&nbsp;backend</span><span class="yrs">&nbsp;new</span></div>
           </div>
 
@@ -378,13 +380,13 @@
           </p>
 
           <div class="direct">
-            <a href="mailto:charlroux641@gmail.com">charlroux641@gmail.com</a>
+            <a href="mailto:charlit641@gmail.com">charlit641@gmail.com</a>
             <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" rel="noopener">linkedin.com/in/charl-roux</a>
             <a href="https://github.com/DevelopStudios" target="_blank" rel="noopener">github.com/DevelopStudios</a>
           </div>
         </div>
 
-        <form class="term-form" action="https://formsubmit.co/charlroux641@gmail.com" method="POST">
+        <form class="term-form" action="https://formsubmit.co/charlit641@gmail.com" method="POST">
           <div class="term-head">
             <span class="dots"><span></span><span></span><span></span></span>
             <span>contact.sh</span>
@@ -425,7 +427,7 @@
         <span>© 2026 — built from scratch, no framework</span>
         <a href="https://github.com/DevelopStudios" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/charl-roux-50b124122/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:charlroux641@gmail.com">Email</a>
+        <a href="mailto:charlit641@gmail.com">Email</a>
       </div>
     </div>
   </footer>
