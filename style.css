@@ -656,7 +656,7 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
 
 /* Special: stat tiles */
 .tile.stat {
-  grid-column: span 4;
+  grid-column: span 6;
   background: var(--bg);
   border-color: var(--line);
   justify-content: space-between;
@@ -676,10 +676,6 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
   text-transform: uppercase;
   color: var(--fg-mute);
   max-width: 28ch;
-}
-
-.tile.compact {
-  grid-column: span 4;
 }
 
 /* ============================================================
