@@ -28,7 +28,7 @@ Every one runs entirely in the browser — no server, no backend, no API key.
 
 ## Skills
 
-**7 years:** Angular (v7→v19) · TypeScript · RxJS · HTML · CSS  
+**7 years:** Angular (v2→v19) · TypeScript · RxJS · HTML · CSS  
 **6 years:** Accessibility (ARIA, keyboard, axe)  
 **5 years:** NgRx · Cypress / Jest  
 **4 years:** Node.js · CI/CD (GitHub Actions, Docker)  
