@@ -563,6 +563,7 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
   content: ''; width: 6px; height: 6px; border-radius: 50%;
   background: var(--signal);
 }
+.tile .tile-head .status-tag.dev::before { background: var(--accent); }
 
 .tile h3 {
   margin: 0;
@@ -637,6 +638,20 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
     linear-gradient(180deg, transparent 40%, rgba(12,10,8,.55) 100%);
   pointer-events: none;
 }
+.tile .shot.demo img { object-position: top; }
+.tile .shot .shot-note {
+  position: absolute;
+  left: 12px; bottom: 10px;
+  z-index: 1;
+  padding: 4px 8px;
+  font-family: var(--mono);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg);
+  background: rgba(12,10,8,.78);
+  border: 1px solid var(--line);
+}
 
 /* ----- Bento sizes ----- */
 .tile.featured {
@@ -653,10 +668,13 @@ section.projects { padding: clamp(80px, 10vw, 140px) 0; }
   grid-column: span 6;
 }
 .tile.half .shot { aspect-ratio: 16 / 8; }
+.tile.compact {
+  grid-column: span 4;
+}
 
 /* Special: stat tiles */
 .tile.stat {
-  grid-column: span 6;
+  grid-column: span 4;
   background: var(--bg);
   border-color: var(--line);
   justify-content: space-between;
@@ -944,6 +962,7 @@ footer.foot {
   .tile.featured { grid-column: span 6; grid-row: span 1; }
   .tile.tall     { grid-column: span 6; grid-row: span 1; }
   .tile.half     { grid-column: span 6; }
+  .tile.compact  { grid-column: span 6; }
   .tile.stat     { grid-column: span 3; }
 
   .skills-grid   { grid-template-columns: 1fr; gap: 28px; }
@@ -965,9 +984,11 @@ footer.foot {
   .status-bar {
     grid-template-columns: 1fr auto;
     height: auto;
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .status-bar .left { font-size: 12px; }
+  .status-bar .work-mode { display: none; }
   .status-bar .right { gap: 16px; }
 
   /* Hero */
@@ -1011,7 +1032,7 @@ footer.foot {
 
   /* Bento */
   .bento { grid-template-columns: 1fr; gap: 14px; }
-  .tile.featured, .tile.tall, .tile.half, .tile.stat {
+  .tile.featured, .tile.tall, .tile.half, .tile.compact, .tile.stat {
     grid-column: 1 / -1;
     grid-row: auto;
   }
