@@ -149,11 +149,10 @@
     <section class="projects reveal" id="projects">
       <div class="wrap">
         <div class="section-head">
-          <h2><span class="num">01</span><em>Selected work</em></h2>
-          <p class="lede">Five projects across retrieval-augmented document Q&amp;A, reactive
-            streams, finite-state UIs, off-main-thread work, and large-scale virtualization. Four
-            run entirely in the browser — no server, no API key; DocLocal adds a Python/FastAPI
-            backend on NVIDIA NIM.</p>
+          <h2><span class="num">01</span><em>Current work</em></h2>
+          <p class="lede">One project, built in the open: retrieval-augmented document Q&amp;A
+            where every answer cites a passage you can check. Angular and Nx in the browser,
+            a Python/FastAPI backend on NVIDIA NIM behind it.</p>
         </div>
 
         <div class="bento">
@@ -166,7 +165,7 @@
             </div>
             <div class="tile-head">
               <span class="idx">// 01 — featured</span>
-              <span class="status-tag dev">live prototype</span>
+              <span class="status-tag dev">live · invite-only</span>
             </div>
             <h3>DocLocal</h3>
             <div class="stack">
@@ -197,112 +196,6 @@
               <a href="https://doclocal-1bb7p.kinsta.page" target="_blank" rel="noopener">Live build (invite-only)</a>
               <a href="https://github.com/DevelopStudios/doclocal" target="_blank" rel="noopener">Frontend source</a>
               <a href="https://github.com/DevelopStudios/doclocal-backend" target="_blank" rel="noopener">Backend source</a>
-            </div>
-          </article>
-
-          <!-- Tall right -->
-          <article class="tile tall">
-            <div class="shot">
-              <img src="./assets/ledger.png" alt="Precision Ledger — real-time crypto grid" loading="lazy" />
-            </div>
-            <div class="tile-head">
-              <span class="idx">// 02</span>
-              <span class="status-tag">live</span>
-            </div>
-            <h3>Precision Ledger</h3>
-            <div class="stack">
-              <span>Angular</span><span>·</span>
-              <span>RxJS</span><span>·</span>
-              <span>WebSockets</span><span>·</span>
-              <span>TypeScript</span>
-            </div>
-            <p class="desc">
-              Real-time Binance feed streamed into a 10,000-row virtual grid. An adjustable
-              RxJS <code>bufferTime</code> window decouples render pressure from the socket —
-              500+ events/sec batched into one update per interval, with OnPush change detection
-              and the async pipe throughout. No server, no backend, no API key.
-            </p>
-            <div class="links">
-              <a href="https://github.com/DevelopStudios/precision-ledger" target="_blank" rel="noopener">Source</a>
-              <a href="https://precisionledger-j423d.kinsta.page/" target="_blank" rel="noopener">Live preview</a>
-            </div>
-          </article>
-
-          <!-- Half row 1 -->
-          <article class="tile half">
-            <div class="shot">
-              <img src="./assets/invoice.png" alt="InvoiceFlow — invoice state machine" loading="lazy" />
-            </div>
-            <div class="tile-head">
-              <span class="idx">// 03</span>
-              <span class="status-tag">live</span>
-            </div>
-            <h3>InvoiceFlow</h3>
-            <div class="stack">
-              <span>Angular</span><span>·</span>
-              <span>CDK</span><span>·</span>
-              <span>TypeScript</span>
-            </div>
-            <p class="desc">
-              Invoice lifecycle app where <em>draft → pending → paid</em> is a finite state
-              machine at the service layer — invalid transitions are structurally impossible.
-            </p>
-            <div class="links">
-              <a href="https://github.com/DevelopStudios/invoice-app" target="_blank" rel="noopener">Source</a>
-              <a href="https://invoice-1qmx1.kinsta.page/" target="_blank" rel="noopener">Live</a>
-            </div>
-          </article>
-
-          <!-- Half row 2 -->
-          <article class="tile half">
-            <div class="shot">
-              <img src="./assets/password.png" alt="VaultKey — password generator with memorable word mapping" loading="lazy" />
-            </div>
-            <div class="tile-head">
-              <span class="idx">// 04</span>
-              <span class="status-tag">live</span>
-            </div>
-            <h3>VaultKey</h3>
-            <div class="stack">
-              <span>Angular</span><span>·</span>
-              <span>Web Worker</span><span>·</span>
-              <span>WebLLM</span><span>·</span>
-              <span>Playwright</span>
-            </div>
-            <p class="desc">
-              Generates a strong password, then a local Qwen2.5 model, running through WebLLM in a
-              Web Worker, streams memorable word hooks for it without blocking the UI. Playwright
-              E2E tests cover the model start-up and the stream — no server, nothing leaves the
-              device.
-            </p>
-            <div class="links">
-              <a href="https://github.com/DevelopStudios/password-generator" target="_blank" rel="noopener">Source</a>
-              <a href="https://password-generator-duah3.kinsta.page" target="_blank" rel="noopener">Live</a>
-            </div>
-          </article>
-
-          <!-- Compact, shares the last row with the stat tiles -->
-          <article class="tile compact">
-            <div class="shot">
-              <img src="./assets/devjobs.jpg" alt="TalentBoard — virtualized job board with hybrid search" loading="lazy" />
-            </div>
-            <div class="tile-head">
-              <span class="idx">// 05</span>
-              <span class="status-tag">live</span>
-            </div>
-            <h3>TalentBoard</h3>
-            <div class="stack">
-              <span>Angular</span><span>·</span>
-              <span>Orama</span><span>·</span>
-              <span>TypeScript</span>
-            </div>
-            <p class="desc">
-              1,000+ listings virtualized on a single page, with hybrid full-text and vector
-              search via Orama; filter state synced to the URL so any result set is shareable.
-            </p>
-            <div class="links">
-              <a href="https://github.com/DevelopStudios/devjobs-FE.git" target="_blank" rel="noopener">Source</a>
-              <a href="https://devjobs-fe-a0h85.kinsta.page" target="_blank" rel="noopener">Live</a>
             </div>
           </article>
 
